@@ -5,6 +5,9 @@ const GsapStagger = () => {
   useGSAP(() => {
     gsap.to(".stagger-box", {
       scale: 0.6,
+      rotate: 360, 
+      borderRadius: "100%",
+      duration :2,
       // repeat: -1,
       yoyo: true,
       ease: "power1",
@@ -12,7 +15,7 @@ const GsapStagger = () => {
         each: 0.2,
         repeat: -1, 
         yoyo: true, 
-        from: "random"
+        from: "center"
       },
     });
   }, []);
