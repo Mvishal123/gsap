@@ -10,12 +10,12 @@ const GsapStagger = () => {
       duration :2,
       // repeat: -1,
       yoyo: true,
-      ease: "power1",
+      ease: "back.inOut",
       stagger: {
         each: 0.2,
         repeat: -1, 
         yoyo: true, 
-        from: "center"
+        from: "center",
       },
     });
   }, []);

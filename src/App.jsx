@@ -10,6 +10,7 @@ import {
   GsapTo,
   Home,
 } from "./pages";
+import Scroll from "./pages/Scroll";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/gsapscrolltrigger" element={<GsapScrollTrigger />} />
           <Route path="/gsaptext" element={<GsapText />} />
           <Route path="/" element={<Home />} />
+          <Route path="/scroll" element={<Scroll />} />
         </Routes>
       </Router>
     </div>
